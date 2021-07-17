@@ -1,0 +1,42 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.center-div {
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left-side,
+.right-side {
+  height: 80vh;
+  border: 1px solid black;
+  font-size: 25px;
+  padding: 10px 20px;
+}
+
+.left-side {
+  background-color: black;
+  color: aliceblue;
+}
+
+a {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .center-div {
+    width: 80vw;
+    margin: 100px auto;
+    display: block;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+}
